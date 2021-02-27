@@ -1,7 +1,10 @@
 body, html {
   height: 100%;
-  /* fonts */
+}
+
+div, input::placeholder {
   font-family: Cormorant Garamond;
+  text-transform: uppercase;
 }
 
 body {
@@ -26,6 +29,14 @@ body {
   width: 550px;
 }
 
+/* shared */
+
+.image-leaf {
+  background-color: #FDFDFC;
+  padding-top: 46px;
+  padding-bottom: 30px;
+}
+
 /* typography */
 
 @font-face {
@@ -36,7 +47,6 @@ body {
 .text {
   color: #2B2B2B;
   line-height: 150%;
-  text-transform: uppercase;
 }
 
 .handwritten {
@@ -53,6 +63,11 @@ body {
   font-size: 26px;
 }
 
+.title {
+  font-size: 24px;
+  letter-spacing: 0.15em;
+}
+
 /* utils */
 
 .centered {
@@ -61,6 +76,10 @@ body {
 
 .centered > * {
   margin: 0 auto;
+}
+
+.content-wrapper {
+  width: 373px;
 }
 
 /* First Page: Intro */
@@ -85,15 +104,6 @@ body {
 }
 
 /* Second card */
-
-.second-card img {
-  padding-top: 46px;
-  padding-bottom: 30px;
-}
-
-.second-card .content-wrapper {
-  width: 373px;
-}
 
 .second-card .invitation-text {
   font-size: 24px;
@@ -128,4 +138,54 @@ body {
 
 .details {
   padding-top: 38px;
+}
+
+/* Thrird card */
+
+/* Form */
+
+.name-container {
+  padding-top: 43px;
+}
+
+.input-container {
+  width: 284px;
+}
+
+input[type='text'] {
+  background-color: #FDFDFC;
+  width: 284px;
+  height: 36px;
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: #2B2B2B;
+}
+
+input[type='text']::placeholder {
+  font-family: Cormorant Garamond;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #B4B4B4;
+  font-size: 19px;
+  text-align: center;
+}
+
+.answers {
+  padding-top: 30px;
+}
+
+.answer-container {
+  display: flex;
+  padding-top: 19px;
+  width: 100%;
+}
+
+.answer-container input[type='radio'] {
+  transform: scale(1.5);
+  margin: 0;
+}
+
+.answer-container label {
+  letter-spacing: 0.15em;
+  margin-left: 37px;
 }
