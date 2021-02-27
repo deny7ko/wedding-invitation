@@ -1,0 +1,127 @@
+body, html {
+  height: 100%;
+  /* fonts */
+  font-family: Cormorant Garamond;
+}
+
+body {
+  /* The image used */
+  background-image: url("../images/background.jpeg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #FDFDFC;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 550px;
+  width: 550px;
+}
+
+/* typography */
+
+@font-face {
+  font-family: 'Pushkin';
+  src: url('../fonts/Pushkin.ttf') format('truetype');
+}
+
+.text {
+  color: #2B2B2B;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.handwritten {
+  color: #454545;
+  font-size: 36px;
+  font-family: 'Pushkin';
+}
+
+.number {
+  color: #454545;
+}
+
+/* utils */
+
+.centered {
+  margin: 0 auto;
+}
+
+.centered > * {
+  margin: 0 auto;
+}
+
+/* First Page: Intro */
+
+.first-card img {
+  padding: 25px 25px 0 25px;
+}
+
+.first-card .names {
+  font-size: 24px;
+  letter-spacing: 0.15em;
+
+  padding-top: 15px;
+}
+
+.first-card .call {
+  font-size: 16px;
+  letter-spacing: 0.25em;
+
+  padding-top: 3px;
+  padding-bottom: 17px;
+}
+
+/* Second card */
+
+.second-card img {
+  padding-top: 46px;
+  padding-bottom: 30px;
+}
+
+.second-card .content-wrapper {
+  width: 373px;
+}
+
+.second-card .invitation-text {
+  font-size: 24px;
+  letter-spacing: 0.15em;
+  padding-bottom: 26px;
+}
+
+.date-and-place .top-border {
+  border-top: 1px solid #2B2B2B;
+  padding-bottom: 17px;
+  width: 260px;
+}
+
+.date-and-place .bottom-border {
+  border-bottom: 1px solid #2B2B2B;
+  width: 170px;
+  padding-bottom: 25px;
+}
+
+.date-and-place .date {
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.15em;
+
+  padding-bottom: 17px;
+}
+
+.date-and-place .place {
+  font-size: 24px;
+  letter-spacing: 0.15em;
+}
+
+.details {
+  padding-top: 38px;
+}
