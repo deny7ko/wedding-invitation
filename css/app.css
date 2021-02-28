@@ -22,6 +22,19 @@ body {
   justify-content: center;
 }
 
+.cards-container {
+  overflow-y: hidden;
+  height: 600px;
+}
+
+.cards-container > * {
+  margin-bottom: 200px;
+}
+
+.cards-container > *:last-child {
+  margin-bottom: 0;
+}
+
 .card {
   background: #FDFDFC;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
