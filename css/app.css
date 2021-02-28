@@ -208,3 +208,13 @@ input[type='text']::placeholder {
   padding: 24px 34px;
   width: 100%;
 }
+
+/* Thanks card */
+
+#thanks .image-leaf {
+  padding-top: 166px;
+}
+
+#thanks .title {
+  width: 276px;
+}
