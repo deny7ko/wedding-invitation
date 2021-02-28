@@ -57,8 +57,10 @@
     </div>
 
     <form class="centered" action="https://submit-form.com/ZfSBiwtU">
+      <input type="hidden" name="_redirect" value="false" />
+
       <div class="name-container input-container">
-        <input type="text" placeholder="ім'я та прізвище" required>
+        <input type="text" name="name" placeholder="ім'я та прізвище" required>
       </div>
 
       <div class="answers input-container">
@@ -71,6 +73,10 @@
           <input type="radio" id="no" name="answer" value="no" required>
           <label for="no">ні, подумки з вами</label>
         </div>
+      </div>
+
+      <div class="action-container input-container">
+        <button type="submit" class="action">Надіслати відповідь</button>
       </div>
     </form>
   </div>
