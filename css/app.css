@@ -298,6 +298,11 @@ input[type='text']::placeholder {
 
 /* swiper */
 
+.swiper-container {
+  width: 550px;
+  height: 550px;
+}
+
 .swiper-pagination-bullet {
   outline: 0;
   height: 16px;
