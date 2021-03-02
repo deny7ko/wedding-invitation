@@ -303,6 +303,13 @@ input[type='text']::placeholder {
   height: 550px;
 }
 
+@media only screen and (max-width: 600px) {
+  .swiper-container {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .swiper-pagination-bullet {
   outline: 0;
   height: 16px;
