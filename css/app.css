@@ -18,6 +18,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .card {
