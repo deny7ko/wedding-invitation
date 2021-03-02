@@ -140,7 +140,7 @@ body {
 /* Form */
 
 .name-container {
-  padding-top: 43px;
+  padding-top: 24px;
 }
 
 .input-container {
@@ -199,7 +199,7 @@ input[type='text']::placeholder {
   background: transparent;
   border: 1px solid #2B2B2B;
   cursor: pointer;
-  padding: 24px 34px;
+  padding: 24px 0;
   width: 100%;
 }
 
