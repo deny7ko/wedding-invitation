@@ -23,7 +23,7 @@ body {
   background: #FDFDFC;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   text-align: center;
-  height: 550px;
+  height: 550px !important;
   width: 550px;
 }
 
@@ -81,10 +81,6 @@ body {
 }
 
 /* First Page: Intro */
-
-.first-card img {
-  padding: 25px 25px 0 25px;
-}
 
 .first-card .names {
   font-size: 24px;
@@ -298,4 +294,17 @@ input[type='text']::placeholder {
 	transition-duration: 0.05s;
 	transition-delay: 0.4s;
 	transition-timing-function: linear;
+}
+
+/* swiper */
+
+.swiper-pagination-bullet {
+  outline: 0;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #2B2B2B;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2B2B2B !important;
 }
