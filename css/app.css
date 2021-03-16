@@ -26,8 +26,8 @@ body {
   background: #FDFDFC;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   text-align: center;
-  height: 550px !important;
-  width: 550px;
+  height: 560px !important;
+  width: 560px;
 }
 
 /* shared */
@@ -84,6 +84,10 @@ body {
 }
 
 /* First Page: Intro */
+.first-card img {
+  height: 420px;
+  padding-top: 25px;
+}
 
 .first-card .names {
   font-size: 24px;
@@ -302,8 +306,8 @@ input[type='text']::placeholder {
 /* swiper */
 
 .swiper-container {
-  width: 550px;
-  height: 550px;
+  width: 560px;
+  height: 560px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -329,5 +333,5 @@ input[type='text']::placeholder {
 /* Thanks Page */
 
 #thanks {
-  
+
 }
