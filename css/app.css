@@ -30,6 +30,18 @@ body {
   width: 560px;
 }
 
+.swipe-hint {
+  position: absolute;
+  z-index: 5;
+  right: 32px;
+  bottom: 32px;
+}
+
+.swipe-hint img {
+  height: 32px;
+  width: 32px;
+}
+
 /* shared */
 
 .image-leaf {
