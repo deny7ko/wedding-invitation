@@ -263,7 +263,7 @@ input[type='text']::placeholder {
 	display: block;
 	position: relative;
 	mix-blend-mode: difference;
-	z-index: 10;
+	z-index: 1;
 }
 
 .button--calypso:hover span {
