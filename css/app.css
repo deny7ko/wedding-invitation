@@ -85,15 +85,17 @@ body {
 
 /* First Page: Intro */
 .first-card img {
-  height: 420px;
-  padding-top: 25px;
+  max-width: 100%;
+}
+
+.image-container {
+  padding: 25px 25px 0 25px;
 }
 
 .first-card .names {
   font-size: 24px;
   letter-spacing: 0.15em;
-
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .first-card .call {
