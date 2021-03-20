@@ -68,16 +68,7 @@ body {
   background: #FDFDFC;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   text-align: center;
-
-  height: var(--card-desktop-size);
-  width: var(--card-desktop-size);
-}
-
-@media only screen and (max-width: 600px) {
-  .card {
-    height: var(--card-mobile-size);
-    width: var(--card-mobile-size);
-  }
+  height: 100%;
 }
 
 .swipe-hint {
