@@ -22,6 +22,13 @@ div, button, input::placeholder {
   perspective: 1000px;
 }
 
+@media only screen and (max-width: 600px) {
+  .flip-card {
+    width: var(--card-mobile-size);
+    height: var(--card-mobile-size);
+  }
+}
+
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
@@ -69,18 +76,6 @@ body {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   text-align: center;
   height: 100%;
-}
-
-.swipe-hint {
-  position: absolute;
-  z-index: 5;
-  right: 32px;
-  bottom: 32px;
-}
-
-.swipe-hint img {
-  height: 32px;
-  width: 32px;
 }
 
 /* shared */
@@ -151,6 +146,12 @@ body {
   padding-top: 10px;
 }
 
+/* @media only screen and (max-width: 600px) {
+  .first-card .names {
+    font-size: 14px
+  }
+} */
+
 .first-card .call {
   font-size: 16px;
   letter-spacing: 0.25em;
@@ -159,6 +160,12 @@ body {
   padding-bottom: 17px;
 }
 
+/* @media only screen and (max-width: 600px) {
+  .first-card .call {
+    font-size: 9px
+  }
+} */
+
 /* Second card */
 
 .second-card .invitation-text {
@@ -166,6 +173,12 @@ body {
   letter-spacing: 0.15em;
   padding-bottom: 26px;
 }
+
+/* @media only screen and (max-width: 600px) {
+  .second-card .invitation-text {
+    font-size: 14px
+  }
+} */
 
 .date-and-place .top-border {
   border-top: 1px solid #2B2B2B;
@@ -187,15 +200,33 @@ body {
   padding-bottom: 17px;
 }
 
+/* @media only screen and (max-width: 600px) {
+  .date-and-place .date {
+    font-size: 16px
+  }
+} */
+
 .date-and-place .place {
   font-size: 24px;
   letter-spacing: 0.15em;
 }
 
+/* @media only screen and (max-width: 600px) {
+  .date-and-place .place {
+    font-size: 14px
+  }
+} */
+
 .details {
   font-size: 19px;
   padding-top: 38px;
 }
+
+/* @media only screen and (max-width: 600px) {
+  .details {
+    font-size: 14px
+  }
+} */
 
 /* Thrird card */
 
@@ -293,13 +324,4 @@ input[type='text']::placeholder {
 
 #thanks {
 
-}
-
-/* mobile */
-
-@media only screen and (max-width: 600px) {
-  .flip-card {
-    width: var(--card-mobile-size);
-    height: var(--card-mobile-size);
-  }
 }
