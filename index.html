@@ -10,112 +10,116 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <title>Denysko and Anna Wedding Invitation</title>
+    <title>Весілля Ані та Дениска</title>
   </head>
   <body>
-
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swipe-hint">
-        <img src="images/swipe.png" />
-      </div>
-
-      <div class="card first-card swiper-slide">
-        <div class="image-container">
-          <img src="images/photo.jpeg" />
-        </div>
-
-        <div class="names text">АНЯ ТА ДЕНИСКО</div>
-
-        <div class="call text">одружуються!</div>
-      </div>
-
-      <div class="card second-card swiper-slide">
-        <img src="images/leaf.jpeg" class="image-leaf" />
-
-        <div class="content-wrapper centered">
-          <div class="invitation-text text">
-            Запрошуємо тебе на святкування весілля
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="card first-card swiper-slide">
+          <div class="image-container">
+            <img src="images/photo.jpeg" />
           </div>
 
-          <div class="date-and-place centered">
-            <div class="top-border"></div>
-            <div class="date number">
-              22<span class="dot">•</span>05<span class="dot">•</span>2021
+          <div class="names text">АНЯ ТА ДЕНИСКО</div>
+
+          <div class="call text">одружуються!</div>
+        </div>
+
+        <div class="card second-card swiper-slide">
+          <img src="images/leaf.jpeg" class="image-leaf" />
+
+          <div class="content-wrapper centered">
+            <div class="invitation-text text">
+              Запрошуємо тебе на святкування весілля
             </div>
-            <div class="text place">Кременчук</div>
-            <div class="bottom-border"></div>
-          </div>
 
-          <div class="details text">Деталі згодом</div>
+            <div class="date-and-place centered">
+              <div class="top-border"></div>
+              <div class="date number">
+                22<span class="dot">•</span>05<span class="dot">•</span>2021
+              </div>
+              <div class="text place">Кременчук</div>
+              <div class="bottom-border"></div>
+            </div>
+
+            <div class="details text">Деталі згодом</div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="card third-card swiper-slide">
-        <img src="images/leaf.jpeg" class="image-leaf" />
+    <!-- <div class="card third-card swiper-slide">
+      <img src="images/leaf.jpeg" class="image-leaf" />
 
-        <div class="content-wrapper centered">
-          <div class="text title">приймаєш наше запрошення?</div>
+      <div class="content-wrapper centered">
+        <div class="text title">приймаєш наше запрошення?</div>
 
-          <form class="centered" action="https://submit-form.com/ZfSBiwtU">
+        <form class="centered" action="https://submit-form.com/ZfSBiwtU">
+          <input
+            type="hidden"
+            name="_error"
+            value="http://deny7ko.github.io/wedding-invitation/thanks"
+          />
+
+          <div class="name-container input-container">
             <input
-              type="hidden"
-              name="_error"
-              value="http://deny7ko.github.io/wedding-invitation/thanks"
+              type="text"
+              name="name"
+              placeholder="ім'я та прізвище"
+              required
             />
+          </div>
 
-            <div class="name-container input-container">
+          <div class="answers input-container">
+            <div class="answer-container">
               <input
-                type="text"
-                name="name"
-                placeholder="ім'я та прізвище"
+                type="radio"
+                id="yes"
+                name="answer"
+                value="yes"
                 required
               />
+              <label for="yes">та, біжу готуватись</label>
             </div>
 
-            <div class="answers input-container">
-              <div class="answer-container">
-                <input
-                  type="radio"
-                  id="yes"
-                  name="answer"
-                  value="yes"
-                  required
-                />
-                <label for="yes">та, біжу готуватись</label>
-              </div>
-
-              <div class="answer-container">
-                <input type="radio" id="no" name="answer" value="no" required />
-                <label for="no">ні, подумки з вами</label>
-              </div>
+            <div class="answer-container">
+              <input
+                type="radio"
+                id="no"
+                name="answer"
+                value="no"
+                required
+              />
+              <label for="no">ні, подумки з вами</label>
             </div>
+          </div>
 
-            <div class="action-container input-container">
-              <button class="button action">
-                <span>Надіслати Відповідь</span>
-              </button>
-            </div>
-          </form>
-        </div>
+          <div class="action-container input-container">
+            <button class="button action">
+              <span>Надіслати Відповідь</span>
+            </button>
+          </div>
+        </form>
       </div>
-    </div>
-      <!-- Swiper: Add Pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
+    </div> -->
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.swiper-container', {
-        effect: 'flip',
-        pagination: {
-          clickable: true,
-          el: '.swiper-pagination',
+      var swiper = new Swiper(".swiper-container", {
+        effect: "flip",
+        centeredSlides: true,
+        grabCursor: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
         },
       });
     </script>
