@@ -137,34 +137,22 @@ body {
 }
 
 .image-container {
-  padding: 25px 25px 0 25px;
+  padding: 1.5625em 1.5625em 0 1.5625em;
 }
 
 .first-card .names {
-  font-size: 24px;
+  font-size: 1.5em;
   letter-spacing: 0.15em;
-  padding-top: 10px;
+  padding-top: 0.625em;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .first-card .names {
-    font-size: 14px
-  }
-} */
 
 .first-card .call {
-  font-size: 16px;
+  font-size: 1em;
   letter-spacing: 0.25em;
 
-  padding-top: 3px;
-  padding-bottom: 17px;
+  padding-top: 0.1875em;
+  padding-bottom: 1.0625em;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .first-card .call {
-    font-size: 9px
-  }
-} */
 
 /* Second card */
 
