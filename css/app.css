@@ -289,36 +289,17 @@ input[type='text']::placeholder {
   background: black;
   color: white;
 }
-
-/* swiper */
-
-.swiper-container {
-  width: var(--card-desktop-size);
-  height: var(--card-desktop-size);
-}
-
-@media only screen and (max-width: 600px) {
-  .swiper-container {
-    width: var(--card-desktop-size);
-    height: var(--card-desktop-size);
-  }
-}
-
-.swiper-pagination-bullet {
-  outline: 0;
-  height: 16px;
-  width: 16px;
-  background: transparent !important;
-  border: 1px solid #2B2B2B;
-}
-
-.swiper-pagination-bullet-active {
-  background: #2B2B2B !important;
-}
-
-
 /* Thanks Page */
 
 #thanks {
 
+}
+
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+  .flip-card {
+    width: var(--card-mobile-size);
+    height: var(--card-mobile-size);
+  }
 }
