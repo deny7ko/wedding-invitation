@@ -4,6 +4,12 @@
   --card-mobile-size: 320px;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+
 body, html {
   height: 100%;
 }
@@ -80,12 +86,6 @@ body {
 
 /* shared */
 
-.image-leaf {
-  background-color: #FDFDFC;
-  padding-top: 46px;
-  padding-bottom: 30px;
-}
-
 /* typography */
 
 @font-face {
@@ -128,7 +128,7 @@ body {
 }
 
 .content-wrapper {
-  width: 373px;
+  width: 23.3125em;
 }
 
 /* First Page: Intro */
@@ -168,65 +168,49 @@ body {
 
 /* Second card */
 
-.second-card .invitation-text {
-  font-size: 24px;
-  letter-spacing: 0.15em;
-  padding-bottom: 26px;
+.second-card .image-container {
+  padding-top: 2.875em;
+  padding-bottom: 1.875em;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .second-card .invitation-text {
-    font-size: 14px
-  }
-} */
+.second-card .image-leaf {
+  height: 5em;
+}
+
+.second-card .invitation-text {
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+  padding-bottom: 1.625em;
+}
 
 .date-and-place .top-border {
   border-top: 1px solid #2B2B2B;
-  padding-bottom: 17px;
-  width: 260px;
+  padding-bottom: 1.0625em;
+  width: 16.25em;
 }
 
 .date-and-place .bottom-border {
   border-bottom: 1px solid #2B2B2B;
-  width: 170px;
-  padding-bottom: 25px;
+  width: 10.625em;
+  padding-bottom: 1.5625em;
 }
 
 .date-and-place .date {
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 3em;
+  line-height: 130%;
   letter-spacing: 0.15em;
-
-  padding-bottom: 17px;
+  padding-bottom: 10px;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .date-and-place .date {
-    font-size: 16px
-  }
-} */
 
 .date-and-place .place {
-  font-size: 24px;
+  font-size: 1.5em;
   letter-spacing: 0.15em;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .date-and-place .place {
-    font-size: 14px
-  }
-} */
-
 .details {
-  font-size: 19px;
-  padding-top: 38px;
+  font-size: 1.1875em;
+  padding-top: 1.5em;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .details {
-    font-size: 14px
-  }
-} */
 
 /* Thrird card */
 
