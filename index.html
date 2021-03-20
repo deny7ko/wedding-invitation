@@ -10,118 +10,69 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    /> -->
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
     <title>Весілля Ані та Дениска</title>
   </head>
   <body>
-    <!-- Swiper -->
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="card first-card swiper-slide">
-          <div class="image-container">
-            <img src="images/photo.jpeg" />
-          </div>
-
-          <div class="names text">АНЯ ТА ДЕНИСКО</div>
-
-          <div class="call text">одружуються!</div>
-        </div>
-
-        <div class="card second-card swiper-slide">
-          <img src="images/leaf.jpeg" class="image-leaf" />
-
-          <div class="content-wrapper centered">
-            <div class="invitation-text text">
-              Запрошуємо тебе на святкування весілля
-            </div>
-
-            <div class="date-and-place centered">
-              <div class="top-border"></div>
-              <div class="date number">
-                22<span class="dot">•</span>05<span class="dot">•</span>2021
+    <div class="container centered">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="card first-card swiper-slide">
+              <div class="image-container">
+                <img src="images/photo.jpeg" />
               </div>
-              <div class="text place">Кременчук</div>
-              <div class="bottom-border"></div>
-            </div>
 
-            <div class="details text">Деталі згодом</div>
+              <div class="names text">АНЯ ТА ДЕНИСКО</div>
+
+              <div class="call text">одружуються!</div>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div class="card second-card swiper-slide">
+              <img src="images/leaf.jpeg" class="image-leaf" />
+
+              <div class="content-wrapper centered">
+                <div class="invitation-text text">
+                  Запрошуємо тебе на святкування весілля
+                </div>
+
+                <div class="date-and-place centered">
+                  <div class="top-border"></div>
+                  <div class="date number">
+                    22<span class="dot">•</span>05<span class="dot">•</span>2021
+                  </div>
+                  <div class="text place">Кременчук</div>
+                  <div class="bottom-border"></div>
+                </div>
+
+                <div class="details text">Деталі згодом</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- <div class="card third-card swiper-slide">
-      <img src="images/leaf.jpeg" class="image-leaf" />
-
-      <div class="content-wrapper centered">
-        <div class="text title">приймаєш наше запрошення?</div>
-
-        <form class="centered" action="https://submit-form.com/ZfSBiwtU">
-          <input
-            type="hidden"
-            name="_error"
-            value="http://deny7ko.github.io/wedding-invitation/thanks"
-          />
-
-          <div class="name-container input-container">
-            <input
-              type="text"
-              name="name"
-              placeholder="ім'я та прізвище"
-              required
-            />
-          </div>
-
-          <div class="answers input-container">
-            <div class="answer-container">
-              <input
-                type="radio"
-                id="yes"
-                name="answer"
-                value="yes"
-                required
-              />
-              <label for="yes">та, біжу готуватись</label>
-            </div>
-
-            <div class="answer-container">
-              <input
-                type="radio"
-                id="no"
-                name="answer"
-                value="no"
-                required
-              />
-              <label for="no">ні, подумки з вами</label>
-            </div>
-          </div>
-
-          <div class="action-container input-container">
-            <button class="button action">
-              <span>Надіслати Відповідь</span>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div> -->
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        effect: "flip",
-        centeredSlides: true,
-        grabCursor: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
   </body>
+
+  <script>
+    let card = document.querySelector(".flip-card");
+
+    const triggerCardFlip = () => card.classList.toggle("trigger-flip");
+    const startAutoFlip = () => setInterval(triggerCardFlip, 5000);
+
+    let autoFlipId = startAutoFlip();
+
+    document.addEventListener("click", () => {
+      clearInterval(autoFlipId);
+      triggerCardFlip();
+      autoFlipId = startAutoFlip();
+    });
+  </script>
 </html>

@@ -1,3 +1,9 @@
+:root {
+  /* Card is square: height X width. */
+  --card-desktop-size: 560px;
+  --card-mobile-size: 320px;
+}
+
 body, html {
   height: 100%;
 }
@@ -6,6 +12,42 @@ div, button, input::placeholder {
   font-family: Cormorant Garamond;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+/* Flip */
+
+.flip-card {
+  width: var(--card-desktop-size);
+  height: var(--card-desktop-size);
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card.trigger-flip .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 
 body {
@@ -26,8 +68,16 @@ body {
   background: #FDFDFC;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   text-align: center;
-  height: 560px !important;
-  width: 560px;
+
+  height: var(--card-desktop-size);
+  width: var(--card-desktop-size);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: var(--card-mobile-size);
+    width: var(--card-mobile-size);
+  }
 }
 
 .swipe-hint {
@@ -252,14 +302,14 @@ input[type='text']::placeholder {
 /* swiper */
 
 .swiper-container {
-  width: 560px;
-  height: 560px;
+  width: var(--card-desktop-size);
+  height: var(--card-desktop-size);
 }
 
 @media only screen and (max-width: 600px) {
   .swiper-container {
-    height: 100%;
-    width: 100%;
+    width: var(--card-desktop-size);
+    height: var(--card-desktop-size);
   }
 }
 
