@@ -10,11 +10,14 @@
   }
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
-div, button, input::placeholder {
+div,
+button,
+input::placeholder {
   font-family: Cormorant Garamond;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -50,7 +53,8 @@ div, button, input::placeholder {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -72,13 +76,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
 }
 
 .card {
-  background: #FDFDFC;
+  background: #fdfdfc;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
   text-align: center;
   height: 100%;
@@ -89,19 +90,19 @@ body {
 /* typography */
 
 @font-face {
-  font-family: 'Pushkin';
-  src: url('../fonts/Pushkin.ttf') format('truetype');
+  font-family: "Pushkin";
+  src: url("../fonts/Pushkin.ttf") format("truetype");
 }
 
 .text {
-  color: #2B2B2B;
+  color: #2b2b2b;
   line-height: 150%;
 }
 
 .handwritten {
   color: #454545;
   font-size: 36px;
-  font-family: 'Pushkin';
+  font-family: "Pushkin";
 }
 
 .number {
@@ -172,13 +173,13 @@ body {
 }
 
 .date-and-place .top-border {
-  border-top: 1px solid #2B2B2B;
+  border-top: 1px solid #2b2b2b;
   padding-bottom: 1.0625em;
   width: 16.25em;
 }
 
 .date-and-place .bottom-border {
-  border-bottom: 1px solid #2B2B2B;
+  border-bottom: 1px solid #2b2b2b;
   width: 10.625em;
   padding-bottom: 1.5625em;
 }
@@ -204,6 +205,10 @@ body {
 
 /* Form */
 
+.form-container {
+  display: block;
+}
+
 .name-container {
   padding-top: 24px;
 }
@@ -212,26 +217,26 @@ body {
   width: 284px;
 }
 
-input[type='text'] {
-  background-color: #FDFDFC;
+input[type="text"] {
+  background-color: #fdfdfc;
   width: 284px;
   height: 36px;
   outline: 0;
   border-width: 0 0 1px;
 
   font-size: 19px;
-  color: #2B2B2B;
-  border-color: #2B2B2B;
+  color: #2b2b2b;
+  border-color: #2b2b2b;
   font-family: Cormorant Garamond;
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
-input[type='text']::placeholder {
+input[type="text"]::placeholder {
   font-family: Cormorant Garamond;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #B4B4B4;
+  color: #b4b4b4;
   font-size: 19px;
   text-align: center;
 }
@@ -246,7 +251,7 @@ input[type='text']::placeholder {
   width: 100%;
 }
 
-.answer-container input[type='radio'] {
+.answer-container input[type="radio"] {
   transform: scale(1.5);
   margin: 0;
 }
@@ -262,7 +267,7 @@ input[type='text']::placeholder {
 
 .action {
   background: transparent;
-  border: 1px solid #2B2B2B;
+  border: 1px solid #2b2b2b;
   cursor: pointer;
   padding: 24px 0;
   width: 100%;
@@ -280,20 +285,84 @@ input[type='text']::placeholder {
 
 /* button */
 
+/* button */
+
 .button {
-	pointer-events: auto;
-	cursor: pointer;
-	font-family: inherit;
-	font-size: inherit;
-	position: relative;
+  pointer-events: auto;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
 }
 
-.button:hover {
-  background: black;
-  color: white;
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-/* Thanks Page */
 
-#thanks {
+.button--calypso {
+  overflow: hidden;
+  color: #fff;
+}
 
+.button--calypso span {
+  display: block;
+  position: relative;
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+.button--calypso:hover span {
+  animation: MoveScaleUpInitial 0.3s forwards, MoveScaleUpEnd 0.3s forwards 0.3s;
+}
+
+@keyframes MoveScaleUpInitial {
+  to {
+    transform: translate3d(0, -105%, 0) scale3d(1, 2, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes MoveScaleUpEnd {
+  from {
+    transform: translate3d(0, 100%, 0) scale3d(1, 2, 1);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.button--calypso::before {
+  content: "";
+  background: #000;
+  height: 0;
+  top: -110%;
+  left: -10%;
+  border-radius: 50%;
+  transform: translate3d(0, 68%, 0) scale3d(0, 0, 0);
+}
+
+.button--calypso:hover::before {
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+.button--calypso::after {
+  content: "";
+  background: #000;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+.button--calypso:hover::after {
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0.05s;
+  transition-delay: 0.4s;
+  transition-timing-function: linear;
 }
