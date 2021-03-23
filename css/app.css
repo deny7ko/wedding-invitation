@@ -23,6 +23,13 @@ input::placeholder {
   text-transform: uppercase;
 }
 
+.card-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Flip */
 
 .flip-card {
