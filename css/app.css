@@ -231,6 +231,10 @@ body {
   border: 1px solid #2b2b2b;
   padding: 100px 0;
   width: 60vw;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 600px) {
@@ -243,7 +247,7 @@ body {
 
   .form {
     border: none;
-    width: 100%;
+    width: 264px;
   }
 }
 
@@ -251,7 +255,14 @@ body {
   padding-top: 24px;
 }
 
+@media only screen and (max-width: 600px) {
+  .name-container {
+    width: 100%;
+  }
+}
+
 .form-title {
+  color: #2b2b2b;
   font-size: 40px;
   text-align: center;
 }
@@ -263,13 +274,9 @@ body {
   }
 }
 
-.input-container {
-  width: 284px;
-}
-
 input[type="text"] {
   background-color: #fdfdfc;
-  width: 284px;
+  width: 30vw;
   height: 36px;
   outline: 0;
   border-width: 0 0 1px;
@@ -292,6 +299,10 @@ input[type="text"]::placeholder {
 }
 
 @media only screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+  }
+
   input[type="text"]::placeholder {
     font-size: 14px;
   }
@@ -303,6 +314,18 @@ input[type="text"]::placeholder {
 
 .answers {
   padding-top: 30px;
+  display: flex;
+}
+
+.answers > * {
+  flex-basis: 50%;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .answers {
+    flex-direction: column;
+  }
 }
 
 .answer-container {
@@ -318,11 +341,19 @@ input[type="text"]::placeholder {
 
 .answer-container label {
   letter-spacing: 0.15em;
-  margin-left: 37px;
+  margin-left: 15px;
+  width: 230px;
+  text-align: center;
 }
 
 .action-container {
   padding-top: 34px;
+}
+
+@media only screen and (max-width: 600px) {
+  .action-container {
+    width: 100%;
+  }
 }
 
 .action {
@@ -354,11 +385,13 @@ input[type="text"]::placeholder {
   font-family: inherit;
   font-size: inherit;
   position: relative;
+  min-width: 264px;
 }
 
 @media only screen and (max-width: 600px) {
   .button {
     font-size: 12px;
+    width: 100%;
   }
 }
 
