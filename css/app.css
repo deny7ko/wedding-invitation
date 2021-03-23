@@ -221,6 +221,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  border: 1px solid #2b2b2b;
+  padding: 100px 0;
+  width: 60vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -230,10 +240,27 @@ body {
     /* height: 429px; */
     height: auto;
   }
+
+  .form {
+    border: none;
+    width: 100%;
+  }
 }
 
 .name-container {
   padding-top: 24px;
+}
+
+.form-title {
+  font-size: 40px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-title {
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .input-container {
@@ -262,6 +289,16 @@ input[type="text"]::placeholder {
   color: #b4b4b4;
   font-size: 19px;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  input[type="text"]::placeholder {
+    font-size: 14px;
+  }
+
+  .answer-container label {
+    font-size: 14px;
+  }
 }
 
 .answers {
@@ -317,6 +354,12 @@ input[type="text"]::placeholder {
   font-family: inherit;
   font-size: inherit;
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 12px;
+  }
 }
 
 .button::before,

@@ -56,52 +56,42 @@
 
     <div class="form-container">
       <div class="form">
-        <img src="images/leaf.svg" class="image-leaf" />
+        <div class="form-title">приймаєш наше запрошення?</div>
 
-        <div class="content-wrapper centered">
-          <div class="text title">приймаєш наше запрошення?</div>
+        <form class="centered" action="https://submit-form.com/ZfSBiwtU">
+          <input
+            type="hidden"
+            name="_error"
+            value="http://deny7ko.github.io/wedding-invitation/thanks"
+          />
 
-          <form class="centered" action="https://submit-form.com/ZfSBiwtU">
+          <div class="name-container input-container">
             <input
-              type="hidden"
-              name="_error"
-              value="http://deny7ko.github.io/wedding-invitation/thanks"
+              type="text"
+              name="name"
+              placeholder="ім'я та прізвище"
+              required
             />
+          </div>
 
-            <div class="name-container input-container">
-              <input
-                type="text"
-                name="name"
-                placeholder="ім'я та прізвище"
-                required
-              />
+          <div class="answers input-container">
+            <div class="answer-container">
+              <input type="radio" id="yes" name="answer" value="yes" required />
+              <label for="yes">та, біжу готуватись</label>
             </div>
 
-            <div class="answers input-container">
-              <div class="answer-container">
-                <input
-                  type="radio"
-                  id="yes"
-                  name="answer"
-                  value="yes"
-                  required
-                />
-                <label for="yes">та, біжу готуватись</label>
-              </div>
-
-              <div class="answer-container">
-                <input type="radio" id="no" name="answer" value="no" required />
-                <label for="no">ні, подумки з вами</label>
-              </div>
+            <div class="answer-container">
+              <input type="radio" id="no" name="answer" value="no" required />
+              <label for="no">ні, подумки з вами</label>
             </div>
+          </div>
 
-            <div class="action-container input-container">
-              <button class="button action button--calypso">
-                <span>Надіслати Відповідь</span>
-              </button>
-            </div>
-          </form>
-        </div>
+          <div class="action-container input-container">
+            <button class="button action button--calypso">
+              <span>Надіслати Відповідь</span>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 
