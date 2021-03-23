@@ -213,7 +213,23 @@ body {
 /* Form */
 
 .form-container {
-  display: block;
+  /* The image used */
+  background-image: url("../images/form-bg-desktop.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    /* The image used */
+    background-image: url("../images/form-bg-mobile.jpg");
+    /* height: 429px; */
+    height: auto;
+  }
 }
 
 .name-container {
@@ -295,6 +311,7 @@ input[type="text"]::placeholder {
 /* button */
 
 .button {
+  color: black;
   pointer-events: auto;
   cursor: pointer;
   font-family: inherit;
@@ -372,4 +389,16 @@ input[type="text"]::placeholder {
   transition-duration: 0.05s;
   transition-delay: 0.4s;
   transition-timing-function: linear;
+}
+
+/* footer */
+
+footer {
+  min-height: 336px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
 }
