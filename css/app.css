@@ -377,7 +377,7 @@ input[type="text"]::placeholder {
   flex-direction: column;
 }
 
-.image-leaf {
+.thanks-image-leaf {
   padding-bottom: 40px;
 }
 
@@ -523,8 +523,6 @@ footer {
 
 @media only screen and (max-width: 600px) {
   footer {
-    height: 256px;
-    padding-top: 60px;
   }
 
   .footer-container {
@@ -545,6 +543,7 @@ footer {
     position: relative;
     margin-bottom: 20px;
   }
+
 }
 
 .scroll-down {
