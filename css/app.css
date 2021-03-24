@@ -368,12 +368,15 @@ input[type="text"]::placeholder {
 
 /* Thanks card */
 
-#thanks .image-leaf {
-  padding-top: 166px;
+.thanks-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#thanks .title {
-  width: 276px;
+.image-leaf {
+  padding-bottom: 40px;
 }
 
 /* button */
