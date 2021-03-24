@@ -29,6 +29,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* Flip */
@@ -539,4 +540,10 @@ footer {
     position: relative;
     margin-bottom: 20px;
   }
+}
+
+.scroll-down {
+  width: 64px;
+  height: 64px;
+  margin-top: 20px;
 }
