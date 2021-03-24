@@ -16,6 +16,7 @@ html {
 }
 
 div,
+span,
 button,
 input::placeholder {
   font-family: Cormorant Garamond;
@@ -470,11 +471,72 @@ input[type="text"]::placeholder {
 /* footer */
 
 footer {
-  min-height: 336px;
+  background: #f4f2ec;
+  height: 336px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60vw;
+}
+
+.footer-title {
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  min-width: 225px;
+}
+
+.footer-line {
+  border-top: 1px solid #2b2b2b;
+  width: 100%;
+  margin: 0 70px;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social > * {
+  margin-left: 30px;
+}
+
+.footer-social > *:first-child {
+  margin-left: 0;
+}
+
+.footer-social a {
+  padding: 20px;
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    font-size: 10px;
+  footer {
+    height: 256px;
+    padding-top: 60px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footer-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-line {
+    border-top: 0;
+    border-left: 1px solid #2b2b2b;
+    height: 29px;
+    left: 50%;
+    position: relative;
+    margin-bottom: 20px;
   }
 }
