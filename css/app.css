@@ -227,6 +227,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  scroll-behavior: smooth;
 }
 
 .form {
@@ -549,4 +551,9 @@ footer {
   width: 64px;
   height: 64px;
   margin-top: 20px;
+}
+
+.internal-link {
+  cursor: initial;
+  text-decoration: none;
 }
