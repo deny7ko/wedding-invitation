@@ -268,6 +268,7 @@ body {
 .form-title {
   color: #2b2b2b;
   font-size: 40px;
+  line-height: 150%;
   text-align: center;
 }
 
@@ -279,7 +280,6 @@ body {
 }
 
 input[type="text"] {
-  background-color: #fdfdfc;
   width: 30vw;
   height: 36px;
   outline: 0;
@@ -347,7 +347,7 @@ input[type="text"]::placeholder {
   letter-spacing: 0.15em;
   margin-left: 15px;
   width: 230px;
-  text-align: center;
+  text-align: left;
 }
 
 .action-container {
@@ -478,8 +478,6 @@ input[type="text"]::placeholder {
 
 footer {
   background: #f4f2ec;
-  height: 336px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -489,8 +487,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 60vw;
+
+  padding: 150px 0;
 }
 
 .footer-title {
@@ -500,7 +499,6 @@ footer {
 }
 
 .footer-line {
-  border-top: 1px solid #2b2b2b;
   width: 100%;
   margin: 0 5%;
 }
@@ -510,7 +508,7 @@ footer {
 }
 
 .footer-social > * {
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .footer-social > *:first-child {
@@ -521,13 +519,20 @@ footer {
   padding: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  footer {
-  }
+.footer-line .horizontal-line {
+  width: 100%;
+  display: block;
+}
 
+.footer-line .vertical-line {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
   .footer-container {
     flex-direction: column;
     justify-content: flex-start;
+    padding: 60px 0;
   }
 
   .footer-title {
@@ -535,15 +540,13 @@ footer {
     margin-bottom: 30px;
   }
 
-  .footer-line {
-    border-top: 0;
-    border-left: 1px solid #2b2b2b;
-    height: 29px;
-    left: 50%;
-    position: relative;
-    margin-bottom: 20px;
+  .footer-line .horizontal-line {
+    display: none;
   }
 
+  .footer-line .vertical-line {
+    display: block;
+  }
 }
 
 .scroll-down {
