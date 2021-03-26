@@ -510,6 +510,7 @@ footer {
 
 .footer-social {
   display: flex;
+  margin-top: 10px;
 }
 
 .footer-social > * {
