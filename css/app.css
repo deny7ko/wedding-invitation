@@ -586,6 +586,12 @@ footer {
   margin-top: 1em;
 }
 
+@media only screen and (max-width: 600px) {
+  .scroll-down {
+    margin-top: 50px;
+  }
+}
+
 .internal-link {
   cursor: initial;
   text-decoration: none;
