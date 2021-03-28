@@ -1,6 +1,6 @@
 :root {
   /* Card is square: height X width. */
-  --card-desktop-size: 520px;
+  --card-desktop-size: 550px;
   --card-mobile-size: 320px;
 }
 
@@ -560,8 +560,11 @@ footer {
   }
 }
 
-.scroll-down-container {
-  margin: 1em 0;
+.scroll-down {
+  width: 64px;
+  height: 64px;
+
+  margin-top: 1em;
 }
 
 .internal-link {
