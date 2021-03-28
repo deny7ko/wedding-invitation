@@ -96,8 +96,33 @@
         </div>
 
         <div class="action-container input-container">
-          <button class="button action button--calypso" type="submit">
-            <span>Надіслати Відповідь</span>
+          <button class="button action" type="submit">
+            <span class="button-text">Надіслати Відповідь</span>
+            <div class='button-loading'>
+              <div class="heart-container">
+                <span class="heart-text">
+                  Надсилається
+                </span>
+
+                <div class="heart-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 497 470" height="100%" id="heart">
+                  <path d="M140 20C73 20 20 74 20 140c0 135 136 170 228 303 88-132 229-173 229-303 0-66-54-120-120-120-48 0-90 28-109 69-19-41-60-69-108-69z" stroke-width="20" fill="none"/>
+
+                  <defs>
+                    <radialGradient id="radialGradient" cx="50%" cy="50%" r="100%" gradientUnits="objectBoundingBox">
+                        <stop offset="1%" style="stop-color:#7A7976; stop-opacity:1"></stop>
+                        <stop offset="90%" style="stop: color #2b2b2b; stop-opacity:1"></stop>
+                        <stop offset="100%" style="stop-color:#2b2b2b; stop-opacity:1"></stop>
+                      </radialGradient>
+                    </defs>
+                    <style type="text/css">
+                      #heart{stroke:url(#radialGradient)}
+                    </style>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
           </button>
         </div>
       </form>
@@ -140,5 +165,17 @@
       triggerCardFlip();
       autoFlipId = startAutoFlip();
     });
+
+    // submit form
+
+    const submitButton = document.querySelector(".button");
+    const form = document.querySelector("form")
+
+    form.addEventListener("submit", () => {
+      submitButton.disabled = true;
+      submitButton.classList.toggle("button-submitting");
+      submitButton.classList.remove('button--calypso')
+    });
+
   </script>
 </html>
