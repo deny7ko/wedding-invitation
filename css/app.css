@@ -122,6 +122,15 @@ body {
   font-size: 26px;
 }
 
+@media only screen and (max-width: 600px) {
+  .dot {
+    font-size: 12px;
+    height: 100%;
+    vertical-align: middle;
+    padding-right: 4px;
+  }
+}
+
 .title {
   font-size: 24px;
   letter-spacing: 0.15em;
