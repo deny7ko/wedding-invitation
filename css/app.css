@@ -254,8 +254,7 @@ body {
   .form-container {
     /* The image used */
     background-image: url("../images/form-bg-mobile.jpg");
-    /* height: 429px; */
-    height: auto;
+    height: 429px;
   }
 
   .form {
