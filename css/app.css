@@ -594,10 +594,8 @@ footer {
   margin-top: 1em;
 }
 
-@media only screen and (max-width: 600px) {
-  .scroll-down {
-    margin-top: 70px;
-  }
+.scroll-down-container {
+  padding: 10vh;
 }
 
 .internal-link {
