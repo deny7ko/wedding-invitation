@@ -598,6 +598,12 @@ footer {
   padding: 10vh;
 }
 
+@media only screen and (max-width: 600px) {
+  .scroll-down-container {
+    padding: 30px;
+  }
+}
+
 .internal-link {
   cursor: initial;
   text-decoration: none;
