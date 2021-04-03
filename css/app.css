@@ -590,14 +590,12 @@ footer {
 .scroll-down {
   width: 64px;
   height: 64px;
-
-  margin-top: 1em;
 }
 
 .scroll-down-container {
   font-size: 1.5em;
   letter-spacing: 0.25em;
-  padding: 10vh;
+  margin-top: 8vh;
 }
 
 .internal-link {
